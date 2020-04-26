@@ -151,8 +151,6 @@ namespace WebApplication1.Page_Basic
         protected void Page_Changed(object sender, EventArgs e)
         {
             LinkButton linkBtn = sender as LinkButton;
-            //linkBtn.Attributes.Add("class", "lnkBtnSelect");
-            //linkBtn.Enabled = true;
             int pageIndex = int.Parse((sender as LinkButton).CommandArgument);
             this.BindRepeator(pageIndex, int.Parse(ddlListCount.SelectedItem.ToString()));
         }
