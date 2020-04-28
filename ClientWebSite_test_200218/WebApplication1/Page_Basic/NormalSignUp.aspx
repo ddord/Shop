@@ -16,7 +16,7 @@
                     contentType: "application/json",
                     url: "NormalSignUp.aspx/checkID", //이페이지에서 중복체크를 한다
                     dataType: "JSON",
-                    data: new_id,//test.asp에 id 값을 보낸다                    
+                    data: new_id,                    
                     cache: false,
                     success: function (data) {
                         if (data.d == "아이디 생성이 가능합니다.") {
