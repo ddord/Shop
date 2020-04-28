@@ -56,12 +56,12 @@
                     cache: false,
                     success: function (data) {
                         if (data.d[6] == "다시 확인 해주시기 바랍니다.") {
-                            $("#loadtext").html(data.d[0]); //해당 내용을 보여준다
-                            $("#loadname").html(data.d[1]); //해당 내용을 보여준다
-                            $("#loadpwd").html(data.d[2]); //해당 내용을 보여준다
-                            $("#loadpwdRe").html(data.d[3]); //해당 내용을 보여준다
-                            $("#loadaddr").html(data.d[4]); //해당 내용을 보여준다
-                            $("#loadEmail").html(data.d[5]); //해당 내용을 보여준다
+                            $("#loadtext").html(data.d[0]); 
+                            $("#loadname").html(data.d[1]); 
+                            $("#loadpwd").html(data.d[2]); 
+                            $("#loadpwdRe").html(data.d[3]); 
+                            $("#loadaddr").html(data.d[4]);
+                            $("#loadEmail").html(data.d[5]); 
                             alert(data.d[6]);
                         }
                         else {
