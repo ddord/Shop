@@ -18,8 +18,7 @@ namespace WebApplication1.Page_Basic
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-            {
-                
+            {                
                 DataTable dt = boardRead(Session["category"].ToString().Trim(), Session["boardNo"].ToString().Trim());
                 dataRow = dt.Rows[0];
                 
