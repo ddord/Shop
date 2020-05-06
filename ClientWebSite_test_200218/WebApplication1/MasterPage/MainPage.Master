@@ -76,14 +76,9 @@
                     </asp:LoginView>
                 </div>                
             </div>
-            <div class="inner">
+            <div class="inner text-center">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/Main.aspx">Resu Service</a>
+                    <a runat="server" href="~/Main.aspx">Resu Service</a>
                 </div> 
             </div>
             <div class="inner">
@@ -92,8 +87,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/Main.aspx">Resu Service</a>
+                    </button>                    
                 </div> 
             </div>
         </div>

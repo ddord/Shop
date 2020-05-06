@@ -178,7 +178,7 @@ a .lnkBtnSelect {
     word-wrap: break-word;
 }
 
-#header .bar .inner {
+#header, .inner {
     padding: 0 10px;
     width: 100%;
     margin: 0 auto;
