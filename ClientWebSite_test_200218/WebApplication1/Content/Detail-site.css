@@ -178,6 +178,13 @@ a .lnkBtnSelect {
     word-wrap: break-word;
 }
 
+#header .bar .inner {
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+    height: 44px;
+}
+
 .label_title{
     left: 0;
 }
