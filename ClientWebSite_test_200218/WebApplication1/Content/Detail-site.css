@@ -182,7 +182,7 @@ a .lnkBtnSelect {
     padding: 0 10px;
     width: 100%;
     margin: 0 auto;
-    height: 44px;
+    height: 50px;
 }
 
 .label_title{
@@ -253,4 +253,9 @@ tr:hover {
 .margin_LR_5 {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
