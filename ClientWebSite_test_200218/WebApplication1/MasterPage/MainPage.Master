@@ -10,7 +10,6 @@
     <title><%: Page.Title %> - Resu Service</title>
 
     <style>
-
         .dropbtn {
           position: relative;
           padding: 9px 10px;
