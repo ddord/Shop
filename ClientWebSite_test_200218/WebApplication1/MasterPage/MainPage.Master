@@ -83,12 +83,12 @@
             </div>
             <div class="inner">
                 <div class="navbar-header">
-                    <div class="dropdown">
-                        <button type="button" class="dropbtn" style="width:100%;height:100%;">
+                    <div id="achTopMenu" class="dropdown">
+                        <a href="#" class="dropIcon">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </button>
+                        </a>
                         
                         <div class="dropdown-content"> 
                             <nav class="dropdown-content-main">
