@@ -283,27 +283,32 @@ tr:hover {
     z-index: 1;
 }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-.dropbtn .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
+.dropdown-content a {
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-    .dropbtn .icon-bar + .icon-bar {
-        margin-top: 4px;
-    }
+.dropbtn .icon-bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border: 1px solid;
+    border-radius: 1px;
+}
+
+.dropbtn .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
 
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+
+.dropdown-content .dropdown-content-main:hover {
+    background-color: #616161;
 }
 
 .dropdown:hover .dropdown-content {
