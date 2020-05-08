@@ -260,8 +260,6 @@ tr:hover {
     display: inline-block;
     width: 56px;
     height: 56px;
-    border: 1px solid;
-    border-radius: 1px;
 }
 
 #achTopMenu .dropIcon {
@@ -270,6 +268,11 @@ tr:hover {
     left: 0;
     width: 56px;
     height: 56px;
+    text-align: center;
+}
+
+#achTopMenu {
+    display: table-cell;
 }
 
 .dropdown-content {
@@ -305,14 +308,21 @@ tr:hover {
     background-color: #ddd;
 }
 
-.dropdown-content .dropdown-content-main:hover {
-    background-color: #616161;
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropIcon {
     background-color: #b2b5b2;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
 }

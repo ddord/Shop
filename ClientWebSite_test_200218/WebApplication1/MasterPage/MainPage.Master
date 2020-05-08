@@ -91,14 +91,12 @@
                         </a>
                         
                         <div class="dropdown-content"> 
-                            <nav class="dropdown-content-main">
-                                <ul>                                    
-                                    <li><a href="#">Top 50</a></li>
-                                    <li><a href="#">Top 50</a></li>
-                                    <li><a href="#">Top 50</a></li>
-                                    <li><a href="#">Top 50</a></li>
-                                </ul>
-                            </nav>
+                            <ul>                                    
+                                <li><a href="#">Top 50</a></li>
+                                <li><a href="#">Top 50</a></li>
+                                <li><a href="#">Top 50</a></li>
+                                <li><a href="#">Top 50</a></li>
+                            </ul>
                             <%-- <div class="">
                                 <ul>
                                     
