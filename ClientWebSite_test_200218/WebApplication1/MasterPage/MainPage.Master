@@ -65,9 +65,7 @@
                             </asp:LoginView>    
                         </li>
                         <%-- <li><a runat="server" href="~/Page_Basic/MainBoard.aspx">로그인</a></li>--%>                        
-                                                <%-- <li><a runat="server" href="~/Page_Basic/MainBoard.aspx">로그인</a></li>--%>  
-                        <%-- <li><a runat="server" href="~/Page_Basic/MainBoard.aspx">로그인</a></li>--%>  
-                                                <%-- <li><a runat="server" href="~/Page_Basic/MainBoard.aspx">로그인</a></li>--%>  
+                                                <%-- <li><a runat="server" href="~/Page_Basic/MainBoard.aspx">로그인</a></li>--%>    
                         <li><a runat="server" href="~/">회원가입</a></li>
                         <li><a runat="server" href="~/">장바구니</a></li>
                         <li><a runat="server" href="~/">마이페이지</a></li>
