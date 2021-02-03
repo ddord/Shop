@@ -62,22 +62,22 @@ function onChange() {
     var internetUsers = [{
     
      "year": "2005",
-     "value": 67.96
+     "value": 0
  }, {
     
      "year": "2006",
-     "value": 68.93
+     "value": 0
  }, {
    
      "year": "2007",
-     "value": 75
+     "value": 0
  }, {
      "year": "2008",
-     "value": 74
+     "value": 0
  }, {
    
      "year": "2009",
-     "value": 78
+     "value": 0
  }];
 
 
@@ -94,16 +94,16 @@ function onChange() {
          position: "bottom"
      },
      seriesDefaults: {
-         type: "column"
+         type: "area"
      },
      series: [{
         type: "area",
-    line: {
-      color: "red",
-      opacity: 0.5,
-      width: 1,
-      style: "step"
-    },
+    //line: {
+    //  color: "red",
+    //  opacity: 0.5,
+    //  width: 1,
+    //  style: "step"
+    //},
          field: "value",
          name: "Power (Watts)"
        
@@ -158,22 +158,7 @@ setInterval(function() {
   // Update Chart;
  var randomnumber = Math.floor(Math.random() * (100 - 20 + 1)) + 20;
  
- if(showLiveData)
- {
-  //old data
-  var oldData =  $("#chart").data("kendoChart").dataSource.data();
-  
-  if(oldData.length > windowSize){
-  
-  //clear all historic values
-  for(var i =0 ;i<=( oldData.length - windowSize -1 );i++)
-  {  $("#chart").data("kendoChart").dataSource.remove(oldData[i]);
-  }
-  } else if(oldData.length == windowSize) { 
-  // remove first item
-  $("#chart").data("kendoChart").dataSource.remove(oldData[0]);
-  }   
-   }
+ 
    
    //add new data  
 $("#chart").data("kendoChart").dataSource.add({
