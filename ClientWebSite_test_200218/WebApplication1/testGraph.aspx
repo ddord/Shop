@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="testGraph.aspx.cs" Inherits="WebApplication1.testGraph" %>
 
+<%--  test1 --%>
+<%--
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -175,4 +177,54 @@ $("#chart").data("kendoChart").dataSource.add({
 
 
 </body>
+</html>--%>
+
+
+
+
+
+<%--  test2 --%>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chart.js Redraw Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="chart.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+      window.chartOptions = {
+        segmentShowStroke: false,
+        percentageInnerCutout: 75,
+        animation: false
+      };
+      
+      var chartUpdate = function(value) {
+        console.log("Updating Chart: ", value);
+        
+        // Replace the chart canvas element
+        $('#chart').replaceWith('<canvas id="chart" width="300" height="300"></canvas>');
+        
+        // Draw the chart
+        var ctx = $('#chart').get(0).getContext("2d");
+        new Chart(ctx).Doughnut([
+          { value: value,
+            color: '#4FD134' },
+          { value: 100-value,
+            color: '#DDDDDD' }],
+          window.chartOptions);
+        
+        // Schedule next chart update tick
+        setTimeout (function() { chartUpdate(value - 1); }, 1000);
+      }
+
+      $(document).ready(function() {
+        setTimeout (function() { chartUpdate(99); }, 1000);
+      })
+      
+    </script>
+  </head>
+  <body>
+    <canvas id="chart" width="300" height="300"></canvas>
+  </body>
 </html>
