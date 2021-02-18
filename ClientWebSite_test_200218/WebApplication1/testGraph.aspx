@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="testGraph.aspx.cs" Inherits="WebApplication1.testGraph" %>
 
 <%--  test1 --%>
-<%--
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -177,14 +177,14 @@ $("#chart").data("kendoChart").dataSource.add({
 
 
 </body>
-</html>--%>
+</html>
 
 
 
 
 
 <%--  test2 --%>
-
+<%-- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -228,3 +228,5 @@ $("#chart").data("kendoChart").dataSource.add({
     <canvas id="chart" width="300" height="300"></canvas>
   </body>
 </html>
+
+--%>
