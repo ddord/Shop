@@ -2,11 +2,9 @@
 
 <%--  test1 --%>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-        <base href="http://demos.telerik.com/kendo-ui/radar-charts/radar-area">
+<html>
+<head>
+    <base href="http://demos.telerik.com/kendo-ui/radar-charts/radar-area">
     <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
     <title></title>
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common-material.min.css" />
@@ -64,22 +62,22 @@ function onChange() {
     var internetUsers = [{
     
      "year": "2005",
-     "value": 0
+     "value": 67.96
  }, {
     
      "year": "2006",
-     "value": 0
+     "value": 68.93
  }, {
    
      "year": "2007",
-     "value": 0
+     "value": 75
  }, {
      "year": "2008",
-     "value": 0
+     "value": 74
  }, {
    
      "year": "2009",
-     "value": 0
+     "value": 78
  }];
 
 
@@ -96,16 +94,16 @@ function onChange() {
          position: "bottom"
      },
      seriesDefaults: {
-         type: "area"
+         type: "column"
      },
      series: [{
         type: "area",
-    //line: {
-    //  color: "red",
-    //  opacity: 0.5,
-    //  width: 1,
-    //  style: "step"
-    //},
+    line: {
+      color: "red",
+      opacity: 0.5,
+      width: 1,
+      style: "step"
+    },
          field: "value",
          name: "Power (Watts)"
        
@@ -160,7 +158,22 @@ setInterval(function() {
   // Update Chart;
  var randomnumber = Math.floor(Math.random() * (100 - 20 + 1)) + 20;
  
- 
+ if(showLiveData)
+ {
+  //old data
+  var oldData =  $("#chart").data("kendoChart").dataSource.data();
+  
+  if(oldData.length > windowSize){
+  
+  //clear all historic values
+  for(var i =0 ;i<=( oldData.length - windowSize -1 );i++)
+  {  $("#chart").data("kendoChart").dataSource.remove(oldData[i]);
+  }
+  } else if(oldData.length == windowSize) { 
+  // remove first item
+  $("#chart").data("kendoChart").dataSource.remove(oldData[0]);
+  }   
+   }
    
    //add new data  
 $("#chart").data("kendoChart").dataSource.add({
