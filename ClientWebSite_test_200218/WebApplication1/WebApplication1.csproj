@@ -185,6 +185,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="testGraph.aspx" />
+    <Content Include="testWebForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +272,13 @@
     </Compile>
     <Compile Include="testGraph.aspx.designer.cs">
       <DependentUpon>testGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testWebForm.aspx.cs">
+      <DependentUpon>testWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testWebForm.aspx.designer.cs">
+      <DependentUpon>testWebForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -28,5 +28,8 @@
                 You can easily find a web hosting company that offers the right mix of features and price for your applications.
             </p>
         </div>
+        <div>
+            <input type="button" runat="server" id="btnTest" onserverclick="btnTest_Click" name="btnTest" value="Shopping Cart" title="Click to buy a cat" />
+        </div>
     </div>
 </asp:Content>
